@@ -33,7 +33,7 @@ Your app should be running!
 
 Way 3 (in Browser):
 
-Head over to organizeme.tk
+Head over to http://www.organizeme.tk/
 
 The app should load up no set up needed!
 
