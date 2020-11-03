@@ -26,7 +26,6 @@ function handleSubmit() {
     var yyyy = today.getFullYear();
 
     today = mm + '/' + dd + '/' + yyyy;
-    console.log("Work")
 
     let cardDiv = document.createElement("div")
     cardDiv.className = "card"
