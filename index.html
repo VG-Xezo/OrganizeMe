@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="stylesheet" href="css/index.css">
+    <title>OrganizeMe - App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/icon.png" width="30" height="30" class="d-inline-block align-top mr-2"
+                alt="OrganizeMe Icon" loading="lazy">
+            OrganizeMe
+        </a>
+    </nav>
+    <section>
+        <h2 class="text-center text-white mt-2">Create a New List Entry</h2>
+        <form class="mt-5">
+            <div class="container">
+                <div class="form-group">
+                    <label for="name-input" class="text-white">List Entry Name</label>
+                    <input type="text" placeholder="List entry name" class="form-control" id="name-input">
+                </div>
+                <div class="form-group">
+                    <label for="desc-input" class="text-white">List Entry Description</label>
+                    <input type="text" placeholder="List entry description" class="form-control" id="desc-input">
+                </div>
+                <div class="form-group">
+                    <label for="extra-input" class="text-white">List Entry Link</label>
+                    <input type="text" placeholder="List entry link" class="form-control" id="extra-input">
+                </div>
+            </div>
+            <div class="button-container text-center mt-2">
+                <button class="btn btn-danger" id="submit-btn" type="button">Add Entry to List</button>
+            </div>
+        </form>
+    </section>
+    <section class="m-3">
+        <h2 class="text-center mb-3 mt-2 text-white">Your List</h2>
+        <div class="text-center">
+            <button class="btn btn-primary mr-2 mt-1 mb-3" id="load-btn">Load List from Storage</button>
+            <button class="btn btn-danger mt-1 ml-1 mb-3" id="die-btn">Remove List from Storage</button>
+        </div>
+        <div class="list-mount" id="list-mount">
+            <h4 class="text-center text-white" id="top-text">Nothing Here! Add one above.</h4>
+        </div>
+    </section>
+    <section class="text-center mb-5">
+        <button class="btn btn-danger" id="remove-btn">Remove Last Added Entry</button>
+    </section>
+    <section class="text-center mt-5 mb-5">
+        <h3 class="text-white mt-2 mb-3">Download OrganizeMe for Windows from Mediafire</h3>
+        <a href="https://www.mediafire.com/file/b9cywls7em1mp9p/OrganizeMe-win32-x64.zip/file" target="_blank">
+            <button class="btn btn-danger"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                </svg> Download</button>
+        </a>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

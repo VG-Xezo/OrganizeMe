@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #363532
+}
+.card {
+    box-shadow: 5px 10px #888888;
+}
